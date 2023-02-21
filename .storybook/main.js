@@ -8,11 +8,9 @@ module.exports = {
     '@storybook/addon-interactions',
     '@storybook/addon-a11y',
     {
-      name: '@storybook/addon-postcss',
+      name: 'storybook-addon-next',
       options: {
-        postcssLoaderOptions: {
-          implementation: require('postcss'),
-        },
+        nextConfigPath: path.resolve(__dirname, '../next.config.js'),
       },
     },
     'storybook-addon-swc',
