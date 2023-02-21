@@ -2,8 +2,6 @@
   "extends": [
     "eslint:recommended",
     "plugin:promise/recommended",
-    "plugin:import/typescript",
-    "plugin:import/recommended",
     "plugin:testing-library/react",
     "next",
     "prettier"
