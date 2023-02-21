@@ -7,11 +7,15 @@ module.exports = {
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
     '@storybook/addon-a11y',
-    'storybook-addon-swc',
     {
-      name: 'storybook-addon-next',
-      options: { nextConfigPath: path.resolve(__dirname, '../next.config.js') },
+      name: '@storybook/addon-postcss',
+      options: {
+        postcssLoaderOptions: {
+          implementation: require('postcss'),
+        },
+      },
     },
+    'storybook-addon-swc',
   ],
   framework: '@storybook/react',
   core: {
